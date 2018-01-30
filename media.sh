@@ -326,13 +326,14 @@ wget -O /usr/bin/user-list https://raw.githubusercontent.com/NafisatulAzmi/SVD/m
 wget -O /usr/bin/user-login https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-login.sh
 wget -O /usr/bin/user-pass https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-pass.sh
 wget -O /usr/bin/user-renew https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-renew.sh
-wget -O /usr/bin/edit-port https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-menu.sh
+wget -O /usr/bin/edit-port https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port.sh
 wget -O /usr/bin/edit-port-dropbear https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-dropbear.sh
 wget -O /usr/bin/edit-port-openssh https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-openssh.sh
 wget -O /usr/bin/edit-port-squid https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-squid.sh
 wget -O /usr/bin/edit-port-openvpn https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-openvpn.sh
 wget -O /usr/bin/benchmark https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/benchmark.sh
 wget -O /usr/bin/root-pass https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/root-pass.sh
+wget -O /usr/bin/update https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/update.sh
 
 chmod +x /usr/bin/speedtest
 chmod +x /usr/bin/ps-mem
@@ -356,12 +357,13 @@ chmod +x /usr/bin/user-list
 chmod +x /usr/bin/user-login
 chmod +x /usr/bin/user-pass
 chmod +x /usr/bin/user-renew
-chmod +x /usr/bin/edit-port-menu
+chmod +x /usr/bin/edit-port
 chmod +x /usr/bin/edit-port-dropbear
 chmod +x /usr/bin/edit-port-openssh
 chmod +x /usr/bin/edit-port-squid
 chmod +x /usr/bin/edit-port-openvpn
 chmod +x /usr/bin/root-pass
+chmod +x /usr/bin/update
 
 echo "*/30 * * * * root service dropbear restart" > /etc/cron.d/dropbear
 echo "00 23 * * * root /usr/bin/disable-user-expire" > /etc/cron.d/disable-user-expire
