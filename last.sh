@@ -458,7 +458,7 @@ echo "" | tee -a log-install.txt
 echo "SILAHKAN REBOOT VPS ANDA !" | tee -a log-install.txt
 echo "=======================================================" | tee -a log-install.txt
 cd
-rm -f /root/debian7.sh
+rm -f /root/last.sh
 rm -f /root/pptp.sh
 rm -f /root/dropbear-2017.75.tar.bz2
 rm -rf /root/dropbear-2017.75
