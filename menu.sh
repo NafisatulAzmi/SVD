@@ -1,4 +1,5 @@
 #!/bin/bash
+#Scritp Created By Pa'an Finest
 while :
 do
 	#MYIP=$(ifconfig | grep 'inet addr:' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | cut -d: -f2 | awk '{ print $1}' | head -1)
