@@ -177,7 +177,7 @@ do
 		;;
 		24)
 		clear
-		edit-port-menu
+		edit-port
 		exit
 		;;
 		25)
