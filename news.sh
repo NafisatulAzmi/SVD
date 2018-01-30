@@ -51,7 +51,7 @@ wget -O /usr/bin/edit-port-squid https://raw.githubusercontent.com/NafisatulAzmi
 wget -O /usr/bin/edit-port-openvpn https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-openvpn.sh
 wget -O /usr/bin/benchmark https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/benchmark.sh
 wget -O /usr/bin/root-pass https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/root-pass.sh
-wget -O /usr/bin/update https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/update.sh
+wget -O /usr/bin/update https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/news.sh
 
 chmod +x /usr/bin/speedtest
 chmod +x /usr/bin/ps-mem
@@ -81,4 +81,4 @@ chmod +x /usr/bin/edit-port-openssh
 chmod +x /usr/bin/edit-port-squid
 chmod +x /usr/bin/edit-port-openvpn
 chmod +x /usr/bin/root-pass
-chmod +x /usr/bin/update
+chmod +x /usr/bin/news
