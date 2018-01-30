@@ -326,10 +326,7 @@ chmod +x pptp.sh
 cd
 wget -O /usr/bin/speedtest https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest_cli.py 
 wget -O /usr/bin/ps-mem https://raw.githubusercontent.com/pixelb/ps_mem/master/ps_mem.py 
-
-	wget -O /etc/issue.net https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/bannerA 
-fi
-# encrypted script
+wget -O /etc/issue.net https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/bannerA 
 wget -O /usr/bin/autokill https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/autokill.sh
 wget -O /usr/bin/banned-user https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/banned-user.sh
 wget -O /usr/bin/banner https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/banner.sh
