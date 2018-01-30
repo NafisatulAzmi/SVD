@@ -67,12 +67,6 @@ apt-file update
 vnstat -u -i $ether
 service vnstat restart
 
-# install neofetch
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
-curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
-apt-get update
-apt-get install neofetch
-
 # install screenfetch
 cd
 wget https://raw.githubusercontent.com/KittyKatt/screenFetch/master/screenfetch-dev
@@ -203,6 +197,9 @@ mv /usr/sbin/dropbear /usr/sbin/dropbear1
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
 service dropbear restart 
 
+# install fail2ban
+apt-get update;apt-get -y install fail2ban;service fail2ban restart;
+
 # Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
 clear
@@ -282,9 +279,6 @@ iptables-restore < /etc/iptables.up.rules
 #sed -i '$ i\iptables -A OUTPUT -p udp -m udp -j DROP' /etc/rc.local
 #sed -i '$ i\iptables -A OUTPUT -p tcp -m tcp -j DROP' /etc/rc.local
 
-# install fail2ban
-apt-get update;apt-get -y install fail2ban;service fail2ban restart;
-
 # install squid3
 apt-get -y install squid3
 wget -O /etc/squid3/squid.conf https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/squid3.conf 
@@ -332,7 +326,7 @@ wget -O /usr/bin/user-list https://raw.githubusercontent.com/NafisatulAzmi/SVD/m
 wget -O /usr/bin/user-login https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-login.sh
 wget -O /usr/bin/user-pass https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-pass.sh
 wget -O /usr/bin/user-renew https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/user-renew.sh
-wget -O /usr/bin/edit-port https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port.sh
+wget -O /usr/bin/edit-port https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-menu.sh
 wget -O /usr/bin/edit-port-dropbear https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-dropbear.sh
 wget -O /usr/bin/edit-port-openssh https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-openssh.sh
 wget -O /usr/bin/edit-port-squid https://raw.githubusercontent.com/NafisatulAzmi/SVD/master/edit-port-squid.sh
@@ -362,7 +356,7 @@ chmod +x /usr/bin/user-list
 chmod +x /usr/bin/user-login
 chmod +x /usr/bin/user-pass
 chmod +x /usr/bin/user-renew
-chmod +x /usr/bin/edit-port
+chmod +x /usr/bin/edit-port-menu
 chmod +x /usr/bin/edit-port-dropbear
 chmod +x /usr/bin/edit-port-openssh
 chmod +x /usr/bin/edit-port-squid
@@ -458,7 +452,7 @@ echo "" | tee -a log-install.txt
 echo "SILAHKAN REBOOT VPS ANDA !" | tee -a log-install.txt
 echo "=======================================================" | tee -a log-install.txt
 cd
-rm -f /root/last.sh
+rm -f /root/media.sh
 rm -f /root/pptp.sh
 rm -f /root/dropbear-2017.75.tar.bz2
 rm -rf /root/dropbear-2017.75
