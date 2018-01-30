@@ -1,4 +1,5 @@
 #!/bin/bash
+#Script Created By Pa'an Finest
 read -p "Masukkan port OpenVPN yang diinginkan: " port
 
 #openvpn
