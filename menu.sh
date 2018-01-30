@@ -48,7 +48,7 @@ do
 	echo -e "\e[031;1m21\e[0m) Benchmark (\e[34;1mbenchmark\e[0m)"
 	echo -e "\e[031;1m22\e[0m) Restart Webmin (\e[34;1mservice webmin restart\e[0m)"
 	echo -e "\e[031;1m23\e[0m) Edit Banner SSH Login (Dropbear/OpenSSH) (\e[34;1mbanner\e[0m)"
-	echo -e "\e[031;1m24\e[0m) Edit Port (\e[34;1medit-port\e[0m)"
+	echo -e "\e[031;1m24\e[0m) Edit Port (\e[34;1mmenu-edit-port\e[0m)"
 	echo -e "\e[031;1m25\e[0m) Ganti Password Root (\e[34;1mroot-pass\e[0m)"
 	echo -e "\e[031;1m26\e[0m) Reboot Server (\e[34;1mreboot\e[0m)"
 	echo ""
