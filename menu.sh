@@ -98,7 +98,102 @@ do
 		clear
 		user-login
 		exit
-		;;
-		9)
+		;;		
+                9)
 		clear
-		#read -p "Isikan Maximal Log
+		#read -p "Isikan Maximal Login (1-2): " MULTILOGIN
+		#user-limit $MULTILOGIN
+		user-limit
+		exit
+		;;
+		10)
+		clear
+		autokill
+		exit
+		;;
+		11)
+		clear
+		user-list
+		exit
+		;;
+		12)
+		clear
+		user-active-list
+		exit
+		;;
+		13)
+		clear
+		user-expire-list
+		exit
+		;;
+		14)
+		clear
+		disable-user-expire
+		exit
+		;;
+		15)
+		clear
+		delete-user-expire
+		exit
+		;;
+		16)
+		clear
+		banned-user
+		exit
+		;;
+		17)
+		clear
+		unbanned-user
+		exit
+		;;
+		18)
+		clear
+		service dropbear restart
+		exit
+		;;
+		19)
+		clear
+		ps-mem
+		exit
+		;;
+		20)
+		clear
+		speedtest --share
+		exit
+		;;
+		21)
+		clear
+		benchmark
+		exit
+		;;
+		22)
+		clear
+		service webmin restart
+		exit
+		;;
+		23)
+		clear
+		banner
+		exit
+		;;
+		24)
+		clear
+		edit-port
+		exit
+		;;
+		25)
+		clear
+		root-pass
+		exit
+		;;
+		26)
+		clear
+		reboot
+		exit
+		;;
+		x)
+		clear
+		exit
+		;;
+	esac
+done
