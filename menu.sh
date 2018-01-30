@@ -7,7 +7,7 @@ do
 	#fi
 
 	clear
-	echo "--------------- Selamat datang di Server Finest Media - IP: $MYIP ---------------"
+	echo "--------------- Selamat Datang Di Server Finest Media - IP: $MYIP ---------------"
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -21,8 +21,8 @@ do
 	echo -e "\e[032;1mTotal amount of ram:\e[0m $tram MB"
 	echo -e "\e[032;1mTotal amount of swap:\e[0m $swap MB"
 	echo -e "\e[032;1mSystem uptime:\e[0m $up"
-	echo "Script Created By Pa'an Finest"
-    echo "Support By : Finest media - Phreakers Jateng Official"
+        echo -e "\e[032;1mScript Created\e[0m \e[034;1mBy Pa'an Finest\e[032;1m"
+        echo -e "\e[032;1mSupport By :\e[0m \e[031;1mFinest media -\e[0m \e[034;1mPhreakers Jateng Official\e[0m"
 	echo "------------------------------------------------------------------------------"
 	echo "Apa yang ingin Anda lakukan?"
 	echo -e "\e[031;1m 1\e[0m) Buat Akun SSH/OpenVPN (\e[34;1muser-add\e[0m)"
@@ -177,7 +177,7 @@ do
 		;;
 		24)
 		clear
-		edit-port
+		edit-port-menu
 		exit
 		;;
 		25)
