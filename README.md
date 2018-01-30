@@ -1,2 +1,2 @@
-# VPSe
-Install Debian
+# Ape lu?
+Ingat Dosa :V
