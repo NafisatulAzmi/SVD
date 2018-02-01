@@ -1,13 +1,9 @@
 #!/bin/bash
 while :
 do
-	#MYIP=$(ifconfig | grep 'inet addr:' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | cut -d: -f2 | awk '{ print $1}' | head -1)
-	#if [ "$MYIP" = "" ]; then
-		#MYIP=$(wget icanhazip.com -qO -)
-	#fi
-
+IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 	clear
-	echo "--------------- Selamat Datang Di Server Finest Media - IP: $MYIP ---------------"
+	echo "--------------- Selamat Datang Di Server Finest Media - IP: $IP ---------------"
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
