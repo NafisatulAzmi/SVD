@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\e[035;1m---------- Membuat Akun\e[0m \e[037;1mSSH/Ovpn ----------\e[0m"
+echo -e "\e[043;1m---------- Membuat Akun\e[0m \e[023;1mSSH/Ovpn ----------\e[0m"
 read -p "Isikan username: " username
 
 egrep "^$username" /etc/passwd >/dev/null
