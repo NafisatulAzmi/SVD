@@ -81,4 +81,4 @@ chmod +x /usr/bin/edit-port-openssh
 chmod +x /usr/bin/edit-port-squid
 chmod +x /usr/bin/edit-port-openvpn
 chmod +x /usr/bin/root-pass
-chmod +x /usr/bin/news
+chmod +x /usr/bin/finestmedia
