@@ -10,7 +10,7 @@ else
 	read -p "Isikan password akun [$username]: " password
 	read -p "Berapa hari akun [$username] aktif: " AKTIF
 
-        $IP: wget icanhazip.com -qO -
+        IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 	today="$(date +"%Y-%m-%d")"
 	expire=$(date -d "$AKTIF days" +"%Y-%m-%d")
 	useradd -M -N -s /bin/false -e $expire $username
